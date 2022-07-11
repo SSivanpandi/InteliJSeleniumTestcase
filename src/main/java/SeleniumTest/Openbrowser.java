@@ -1,6 +1,7 @@
 package SeleniumTest;
 
 import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.gherkin.model.ScenarioOutline;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,5 +23,6 @@ public class Openbrowser
         driver.findElement(By.name("q")).submit();
         driver.quit();
         extent.flush();
+        System.out.println("Successfully Commit");
     }
 }
